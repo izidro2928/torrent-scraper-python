@@ -7,7 +7,7 @@ print('movie titles must be in English!')
 print('the input below is required'.upper())
 movie_input_title = input("Please Type a movie title: ".upper())
 print('the input below is required'.upper())
-movie_input_year = input("Please Type the movie release date: ".upper())
+movie_input_year = input("Please Type the movie release year: ".upper())
 
 def yts_scraper(movie_title, movie_year):
     movie_title = movie_title.lower()
@@ -46,7 +46,7 @@ def yts_scraper(movie_title, movie_year):
 results = yts_scraper(movie_input_title, movie_input_year)
 
 if results:
-    print("Showing Results of {}".format(movie_input_title))
+    print("Showing Results of: {} {}".format(movie_input_title, movie_input_year))
     print(results)
 else:
     print("Nothing was found".upper())
